@@ -1,0 +1,326 @@
+/*ESTILOS GENERALES*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 25px;
+    background-color: #f0f8ff;
+    min-height: 100vh;
+}
+
+.contenedor {
+    max-width: 700px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/*ENCABEZADO0000000*/
+h1 {
+    color: #03070a;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 35px;
+    border-bottom: 2px solid #87ceeb;
+    padding-bottom: 10px;
+}
+
+/*DATOS PERSONALES*/
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #87ceeb;
+}
+h2 {
+    color: #2d3338;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 10px;
+}
+.descripcion-seccion {
+    text-align: center;
+    margin-bottom: 20px;
+    padding-bottom: 0px;
+    border-bottom: 2px solid #87ceeb;
+}
+
+.imagenc-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid #124c63;
+    margin: 0 auto 15px;
+    display: block;
+    object-fit: cover;
+}
+
+.info-personal {
+    margin: 20px 0;
+}
+
+.dato {
+    display: flex;
+    margin: 12px 0;
+    padding: 10px;
+    background: #f8fcfe;
+    border-left: 3px solid #87ceeb;
+    border-radius: 4px;
+}
+
+.etiqueta {
+    font-weight: bold;
+    color: #333;
+    min-width: 140px;
+    margin-right: 10px;
+}
+
+.valor {
+    color: #555;
+    flex: 1;
+}
+
+/*SECCION GENERALES*/
+.seccion {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8fcfe;
+    border-radius: 4px;
+    border-left: 3px solid #87ceeb;
+}
+
+.titulo-seccion {
+    color: #4682b4;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/*LISTAS*/
+.lista {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item {
+    background: white;
+    margin: 6px 0;
+    padding: 8px 12px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    color: #555;
+}
+/*BOTONES DE NAVEGACIÓN*/
+.botones-navegacion {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.boton {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    background: #4682b4;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.boton:hover {
+    background: #5a9bd4;
+}
+
+/*ESTILOS RESPONSIVO)??S*/
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+    
+    .contenedor {
+        padding: 20px;
+    }
+    
+    .dato {
+        flex-direction: column;
+        padding: 12px;
+    }
+    
+    .etiqueta {
+        min-width: auto;
+        margin-bottom: 5px;
+        margin-right: 0;
+    }
+    
+    .boton {
+        display: block;
+        margin: 8px 0;
+        width: 100%;
+        max-width: 200px;
+    }
+    
+    .botones-navegacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/* ESTILOS PARA CLIENTES EN FORMULARIO */
+.formulario-persona {
+    margin: 20px 0;
+}
+
+.campo-formulario {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f8fcfe;
+    border-left: 3px solid #87ceeb;
+    border-radius: 4px;
+}
+
+.campo-formulario label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.campo-formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    transition: border-color 0.3s;
+}
+
+.campo-formulario input:focus {
+    outline: none;
+    border-color: #4682b4;
+    box-shadow: 0 0 0 2px rgba(70, 130, 180, 0.2);
+}
+
+.error {
+    color: #d32f2f;
+    font-size: 13px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.boton-secundario {
+    background: #6c757d;
+}
+
+.boton-secundario:hover {
+    background: #5a6268;
+}
+
+.mensaje-exito {
+    background: #d4edda;
+    color: #155724;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #c3e6cb;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.mensaje-exito h2 {
+    color: #155724;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+    .campo-formulario {
+        padding: 12px;
+    }
+    
+    .campo-formulario input {
+        font-size: 16px; 
+    }
+}
+/* ESTILOS ADICIONALES PARA AGREGAR AL CSS EXISTENTE */
+
+/* Botón principal más llamativo */
+.boton-principal {
+    background: linear-gradient(135deg, #2c5aa0 0%, #87ceeb 100%);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(44, 90, 160, 0.4);
+    transform: translateY(0);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.boton-principal:hover {
+    background: linear-gradient(135deg, #1a4480 0%, #5a9bd4 100%);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(44, 90, 160, 0.6);
+}
+
+.boton-principal:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(44, 90, 160, 0.4);
+}
+
+/* Mejorar el textarea del formulario */
+.campo-formulario textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    transition: border-color 0.3s;
+    resize: vertical;
+    min-height: 80px;
+    font-family: Arial, sans-serif;
+}
+
+.campo-formulario textarea:focus {
+    outline: none;
+    border-color: #4682b4;
+    box-shadow: 0 0 0 2px rgba(70, 130, 180, 0.2);
+}
+
+/* Estilo para campos de fecha */
+.campo-formulario input[type="date"] {
+    cursor: pointer;
+}
+
+/* Títulos de sección del formulario */
+.seccion h3 {
+    color: #4682b4;
+    font-size: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #87ceeb;
+}
+
+/* Texto pequeño informativo */
+.campo-formulario small {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+/* Responsivo para el botón principal */
+@media (max-width: 768px) {
+    .boton-principal {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

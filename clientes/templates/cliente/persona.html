@@ -1,0 +1,6 @@
+
+<form action="{% url 'crear_persona' %}" method="post">  
+    {% csrf_token %}
+    {{formulario}}
+    <button>Saludar</button>
+</form>
